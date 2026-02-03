@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://cs425team12.github.io/cs425team12/sitemap.xml
+Sitemap: https://cs425team12.github.io/sitemap.xml
