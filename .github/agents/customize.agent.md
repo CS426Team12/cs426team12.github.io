@@ -348,6 +348,7 @@ This is my first blog post discussing my research in machine learning...
 In `_sass/_themes.scss`:
 
 ```scss
+// Change from purple to blue
 :root {
   --global-theme-color: #{$blue-color};
   --global-theme-color-dark: #{$blue-color-dark};
