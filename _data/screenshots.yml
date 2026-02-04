@@ -7,8 +7,8 @@
 
 # example.png: "Example caption for example.png"
 admin_portal.png: "Admin Portal for user management (Test Data)"
-case_details.png: "Case Details view (Fake Data)"
-dashboard.png: "Dashboard overview (Fake Data)"
+case_details.png: "Case Details view (Test Data)"
+dashboard.png: "Dashboard overview (Test Data)"
 create_user.png: "Create a User"
 login.png: "Login screen"
 
