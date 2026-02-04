@@ -1,0 +1,20 @@
+# Map image filenames to captions. Use the exact filename including extension.
+# Example:
+# screenshot1.png: "Landing page showing triage dashboard"
+# screenshot2.jpg: "Call flow interaction transcript"
+
+# Add your captions below:
+
+# example.png: "Example caption for example.png"
+admin_portal.png: "Admin Portal for user management"
+case_details.png: "Case Details view (Test Data)"
+dashboard.png: "Dashboard overview (Test Data)"
+create_user.png: "Create a User"
+login.png: "Login screen"
+
+order:
+  - login.png
+  - dashboard.png
+  - case_details.png
+  - admin_portal.png
+  - create_user.png

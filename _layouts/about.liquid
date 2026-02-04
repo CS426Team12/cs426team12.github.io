@@ -40,6 +40,45 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
+    <h2>Screenshots</h2>
+    {% assign raw_screenshots = site.static_files | where_exp: "f", "f.path contains '/assets/img/screenshots/'" %}
+    {% assign screenshots = raw_screenshots | where_exp: "f", "f.path contains '.png' or f.path contains '.jpg' or f.path contains '.jpeg' or f.path contains '.gif' or f.path contains '.tiff'" %}
+
+    {% if site.data.screenshots and site.data.screenshots.order %}
+      {% assign shown = "" %}
+      <div class="screenshots-grid">
+      {% for name in site.data.screenshots.order %}
+        {% for f in screenshots %}
+          {% assign fname = f.path | split: '/' | last %}
+          {% if fname == name %}
+            {% assign caption = site.data.screenshots[name] %}
+            {% include figure.liquid path=f.path title=f.name caption=caption %}
+            {% capture shown %}{{ shown }}{{ name }}, {% endcapture %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+
+      {% for f in screenshots %}
+        {% assign fname = f.path | split: '/' | last %}
+        {% unless shown contains fname %}
+          {% assign caption = site.data.screenshots[fname] %}
+          {% include figure.liquid path=f.path title=f.name caption=caption %}
+        {% endunless %}
+      {% endfor %}
+      </div>
+    {% elsif screenshots and screenshots.size > 0 %}
+      <div class="screenshots-grid">
+        {% for f in screenshots %}
+          {% assign fname = f.path | split: '/' | last %}
+          {% assign caption = site.data.screenshots[fname] %}
+          {% include figure.liquid path=f.path title=f.name caption=caption %}
+        {% endfor %}
+      </div>
+    {% else %}
+      _No screenshots uploaded yet. Place images under `/assets/img/screenshots/` and they will appear here._
+    {% endif %}
+
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>

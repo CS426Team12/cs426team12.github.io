@@ -1,0 +1,25 @@
+/* Screenshots grid layout */
+.screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.screenshots-grid img,
+.screenshots-grid .figure-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+  object-fit: contain;
+}
+
+.screenshots-grid .caption {
+  font-size: 0.95rem;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  margin-top: 0.6rem;
+  text-align: center;
+}
