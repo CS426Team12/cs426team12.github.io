@@ -18,8 +18,7 @@
 
 .screenshots-grid .caption {
   font-size: 0.95rem;
-  color: #fff;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  color: var(--global-text-color);
   margin-top: 0.6rem;
   text-align: center;
 }
