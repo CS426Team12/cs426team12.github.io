@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: CS 426 Senior Project in Computer Science, Spring 2025, @ UNR, CSE Department
+subtitle: CS 426 Senior Project in Computer Science, Spring 2026, @ UNR, CSE Department
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
