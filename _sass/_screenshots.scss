@@ -18,7 +18,76 @@
 
 .screenshots-grid .caption {
   font-size: 0.95rem;
-  color: var(--global-text-color);
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   margin-top: 0.6rem;
   text-align: center;
+}
+
+/* Carousel styles */
+.screenshots-carousel {
+  position: relative;
+  margin: 1.5rem 0;
+}
+
+.carousel-track-wrap {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.45s ease;
+  will-change: transform;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 1rem 0;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.carousel-prev { left: 8px; }
+.carousel-next { right: 8px; }
+
+.carousel-dots {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+
+.carousel-dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.35);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.carousel-dots button[aria-selected="true"] {
+  background: var(--global-theme-color);
+}
+
+@media (max-width: 480px) {
+  .carousel-btn { width: 36px; height: 36px; }
 }

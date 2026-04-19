@@ -24,6 +24,35 @@ body.fixed-top-nav {
   padding-top: 57px;
 }
 
+/* About page specific layout */
+.about-container {
+  margin: 1.5rem 0 2rem 0;
+}
+
+.about-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-sections {
+  gap: 1.5rem;
+}
+
+.about-meta {
+  background: var(--global-card-bg-color, #f5f5f5);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.about-meta h3 { margin-top: 0; }
+
+.about-blurb {
+  background: transparent;
+  padding-left: 1rem;
+}
+
+.about-blurb .desc { font-size: 1.05rem; margin-bottom: 0.75rem; }
+
 body.sticky-bottom-footer {
   // Remove padding below footer.
   padding-bottom: 0;

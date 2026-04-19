@@ -11,10 +11,22 @@ case_details.png: "Case Details view (Test Data)"
 dashboard.png: "Dashboard overview (Test Data)"
 create_user.png: "Create a User"
 login.png: "Login screen"
+scheduler.png: "Scheduler view for scheduling appointments"
+calendar.png: "Calendar view for appointments"
+analytics.png: "Analytics dashboard showing trends and insights (Test Data)"
+changelog.png: "Changelog view for tracking case updates (Test Data)"
+file_upload.png: "File upload interface for adding case-related documents"
+reviewed_case_details.png: "Reviewed Case Details view showing case and review notes (Test Data)"
 
 order:
   - login.png
   - dashboard.png
   - case_details.png
+  - changelog.png
+  - file_upload.png
+  - scheduler.png
+  - calendar.png
+  - reviewed_case_details.png
+  - analytics.png
   - admin_portal.png
   - create_user.png

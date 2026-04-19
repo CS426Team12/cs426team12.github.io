@@ -3,9 +3,9 @@
 # -----------------------------------------------------------------------------
 
 title: AI-Assisted ENT Triage System # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
+first_name: 
+middle_name:
+last_name: 
 contact_note: >
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   CS 426 Team 12 Project Website
