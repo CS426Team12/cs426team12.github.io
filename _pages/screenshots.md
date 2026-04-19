@@ -53,7 +53,7 @@ nav_order: 2
     <button class="carousel-btn carousel-next" aria-label="Next">›</button>
     <div class="carousel-dots" role="tablist" aria-label="Screenshots navigation"></div>
   </div>
-  <script src="{{ '/_scripts/screenshots-carousel.js' | relative_url }}" defer></script>
+  <script src="{{ '/assets/js/screenshots-carousel.js' | relative_url }}" defer></script>
 {% else %}
   _No screenshots uploaded yet. Place images under `/assets/img/screenshots/` and they will appear here._
 {% endif %}

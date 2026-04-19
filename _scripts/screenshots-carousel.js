@@ -1,3 +1,7 @@
+---
+permalink: /assets/js/screenshots-carousel.js
+---
+
 document.addEventListener('DOMContentLoaded', function () {
   var carousels = document.querySelectorAll('[data-carousel]');
   carousels.forEach(function (root) {
