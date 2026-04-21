@@ -35,7 +35,7 @@ latest_posts:
 
 # AI-Assisted ENT Triage System
 
-CS 426 Senior Project in Computer Science, Spring 2025, @ UNR, CSE Department
+CS 426 Senior Project in Computer Science, Spring 2026, @ UNR, CSE Department
 
 Team 12: {{ page.team | join: ", " }}
 
